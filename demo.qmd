@@ -1,11 +1,29 @@
 ---
 title: "demo"
+author: "su chen"
+format: html
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Demo for GitHub Class
 
 ```{r}
-1 + 1
+#| label: setup
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Let's first check how many penguins in each species.
+
+```{r}
+penguins |>
+  count(species)
+```
+
+## Let's also add a plot.
+
+```{r}
+penguins |>
+  ggplot(mapping = aes(x = species, y = body_mass_g, fill = species)) +
+  geom_boxplot()+
+  labs(title = "penguin body mass in grams by species")
 ```
