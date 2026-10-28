@@ -6,7 +6,7 @@ format: html
 
 ## Demo for GitHub Class
 
-Favorite dataset: palmerpenguins
+Favorite dataset: palmerpenguins because penguins are so cute!
 
 ```{r}
 #| label: setup
