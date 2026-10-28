@@ -6,6 +6,8 @@ format: html
 
 ## Demo for GitHub Class
 
+Favorite dataset: palmerpenguins
+
 ```{r}
 #| label: setup
 library(tidyverse)
